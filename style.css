@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+}
+
+:root {
+  --cell-size: 100px;
+  --mark-size: cal(var(var(--cell-size) * 0.9));
+}
+
+body {
+  margin: auto;
+  text-align: center;
+}
+
+.board {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  align-content: center;
+}
+
+.cell {
+  border: 1px solid black;
+  width: var(--cell-size);
+  height: var(--cell-size);
+}
+
+.cell:first-child,
+.cell:nth-child(2),
+.cell:nth-child(3) {
+  border-top: none;
+}
+
+.cell:nth-child(3n + 1) {
+  border-left: none;
+}
+
+.cell:nth-child(7),
+.cell:nth-child(8),
+.cell:nth-child(9) {
+  border-bottom: none;
+}
+
+.cell:nth-child(3n + 3) {
+  border-right: none;
+}
+
+button {
+  display: none;
+}
