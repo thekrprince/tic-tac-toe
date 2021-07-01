@@ -105,6 +105,35 @@ body {
   background-color: white;
 }
 
-button {
+.winning-message {
   display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 5rem;
+}
+
+button {
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+.winning-message.show {
+  display: flex;
 }
